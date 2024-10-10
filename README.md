@@ -1,1 +1,1 @@
-# Duo-Project
+# TRIO-Project
