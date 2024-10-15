@@ -12,8 +12,7 @@ function time(timer){
     }
     timer.innerHTML(`time: ${b}:${a}`);
 }
-while (true) {
-    if(timer != null){
-        setTimeout(timer(time), 1000);
-    }
+
+if(timer != null){
+    setTimeout(timer(time), 1000);
 }
