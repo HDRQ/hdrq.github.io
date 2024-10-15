@@ -12,7 +12,11 @@ function time(timer){
     }
     timer.innerHTML(`time: ${b}:${a}`);
 }
-time(timer);
+if(timer != null){
+    timer(time);
+}
 while (true) {
-    time(timer);
+    if(timer != null){
+        timer(time);
+    }
 }
