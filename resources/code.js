@@ -2,7 +2,7 @@ var a = 0;
 var b = 0;
 const timer = document.getElementById("time");
 
-function time(){
+function time(timer){
     a = a + 1;
     console.log(`time: ${a}`)
     setTimeout(() => {}, 1000);
@@ -12,7 +12,7 @@ function time(){
     }
     timer.innerHTML(`time: ${b}:${a}`);
 }
-time();
+time(timer);
 while (true) {
-    time();
+    time(timer);
 }
